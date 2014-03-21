@@ -1,0 +1,7 @@
+- for(var i = 0; i<results.info.num_results; i++)
+    li(data-song=results.tracks[i].href)
+        div.todo-icon.fui-volume 
+        div.todo-content
+            h4.todo-name= results.tracks[i].name
+            span(id='artist_'+results.tracks[i].artists[0].href) 
+                = results.tracks[i].artists[0].name

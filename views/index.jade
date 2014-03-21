@@ -1,0 +1,22 @@
+extends layout
+
+block content
+    #art_container
+    // iframe(src="https://embed.spotify.com/?uri=spotify:track:4bz7uB4edifWKJXSDxwHcs", width="300", height="80", frameborder="0", allowtransparency="true")
+    div.container#playlist
+        div.row
+            div.col-md-12(style='height: 50px')
+        div.row
+            div.col-md-4.col-md-offset-4
+                div.todo
+                    div.todo-search.last#search-container
+                        input#song-input(type='search', value='', placeholder='Search For a Song', class='todo-search-field')
+                    ul#search-results
+            div.col-md-1
+                div.fui-play#play_button(style='display:none')
+        div.row
+            div.col-md-4.col-md-offset-4
+                #player-container
+ 
+
+        

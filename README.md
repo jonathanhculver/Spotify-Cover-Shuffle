@@ -1,7 +1,7 @@
-Spotify-Cover-Shuffle
+Spotify Cover Shuffle
 =====================
 
-Javascript revealing module patterns for a spotify playlist
+Javascript revealing module pattern for a spotify playlist
 
 http://cover-shuffle.herokuapp.com/ 
 

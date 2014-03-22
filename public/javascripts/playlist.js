@@ -40,7 +40,7 @@ var playlistModule = (function() {
         /* made a copy of the array */
         shuffleArray = tracksArray.slice(0);
 
-        for(var i=0; var max = tracksArray.length; i<max; i++) {
+        for(var i=0, max = tracksArray.length; i<max; i++) {
 
             var randomNum = Math.floor(Math.random() * maxNum);
             var nextTrack = shuffleArray[randomNum];

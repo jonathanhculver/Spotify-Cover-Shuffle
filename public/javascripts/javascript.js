@@ -60,8 +60,8 @@ $(document).ready(function() {
 		$('#play_button')[0].style.display = 'none';
 		var shuffled_tracks = playlistModule.shuffleTracks();
 		var track_string = '';
-		for(var i =0; i<shuffled_tracks.length; i++) {
-			if(i==shuffled_tracks.length -1) {
+		for(var i =0, max = shuffled_tracks.length; i<max; i++) {
+			if(i==max -1) {
 				track_string+= shuffled_tracks[i].replace("spotify:track:", "");
 			} else {
 				track_string+= shuffled_tracks[i].replace("spotify:track:", "")+",";
@@ -74,7 +74,7 @@ $(document).ready(function() {
 		search_container.addClass('last');
 		$('#song-input')[0].value = '';
 
-		$('#player-container').html('<iframe src="https://embed.spotify.com/?uri=spotify:trackset:Cover Shuffle:'+track_string+'" frameborder="0" allowtransparency="true"></iframe>');
+		$('#player-container').html('<iframe src="https://embed.spotify.com/?uri=spotify:trackset:Cover Shuffle:'+track_string+'" frameborder="0" width="360" allowtransparency="true"></iframe>');
 		$('#search-container').hide();
 	});
 
